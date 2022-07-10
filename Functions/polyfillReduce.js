@@ -6,7 +6,7 @@ const addFn = (a, b) => a + b;
 const multiplyFn = (a, b) => a * b;
 
 //as functions in javascript are "first class functions", we can pass function as a parameter to another function
-//higer order function
+//higher order function
 //this is also example for "immutability" as we are not disturbing for each elements in "arr"
 function polyFillReduce(arr, helperFn, buildingUp) {
 

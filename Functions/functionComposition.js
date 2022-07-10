@@ -1,7 +1,7 @@
 'use strict'
 
 //function composition:
-//1) chaining with dots relies on javascript prototype feature - functions returing array which then inturn
+//1) chaining with dots relies on javascript prototype feature - functions returning array which then inturn
 //hae access to over all "higher order functions"[map, filter, reduce, etc..]
 //2)We are passing the output to the next function automatically.[divideBy2( addBy2( multiplyBy2 (11) ) )]
 //3)what if we want to chain functions that just returns a regular output

@@ -2,7 +2,7 @@
 
 greet("Mayur");
 
-//function statment (or) function definition
+//function statement (or) function definition
 //due to "hoisting" property -  compilation step such that the variable declaration[var] and function statements
 //are "hoisted" up.
 function greet(name) {
@@ -10,7 +10,7 @@ function greet(name) {
 }
 
 //var a;
-//because of hoisting, "var a" is accesible to console.log() even if the declaration of "a" variable
+//because of hoisting, "var a" is accessible to console.log() even if the declaration of "a" variable
 //is below the "console.log()" line, at that moment, "a" is having value undefined
 console.log("accessing a before declaration =", a);
 

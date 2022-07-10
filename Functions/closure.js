@@ -12,7 +12,7 @@ const funcGenerator = () => {
         console.log("counter", counter++);
         return result;
     }
-    //returing function[function are also objects], since that function is having reference to "counter" which is in
+    //returning function[function are also objects], since that function is having reference to "counter" which is in
     //"funcGenerator" scope's, With the help if [[Scope]]("backpack to function add3[having little persistent memory]")
     //property, we still would have access to "counter" -> "Closure"
     //any variables/objects which add3 refers in "funcGenerator" scope, only those will be saved with respect to 

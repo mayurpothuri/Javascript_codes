@@ -9,7 +9,7 @@ const divideBy2 = num => num / 2;
 //  to only affect the next "line"[function call/invocation]
 //2) Functions as tiny units to be combined and run automatically "must" be completely predictable
 //3) We rely on using their evaluated result to pass the input to the next unit of code(automatically)
-//.Any "side effects"[influencing outside env with repect to it's own env] would destroy this
+//.Any "side effects"[influencing outside env with respect to it's own env] would destroy this
 function reduce(arr, howToCombine, buildingUp) {
     for (let i = 0; i < arr.length; i++) {
         buildingUp = howToCombine(buildingUp, arr[i]);
@@ -32,7 +32,7 @@ console.log(reduce([
 eg; - non pure functions
 let num = 1;
 //here the function is having influence on "num" which is in global scope rather than influencing
-//any other data within it's own scopr/env, so it is not a pure function
+//any other data within it's own scope/env, so it is not a pure function
 const add3 = x => {num++; return x+3;}
 
 add3(2);

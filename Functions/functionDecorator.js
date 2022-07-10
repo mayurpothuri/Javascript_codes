@@ -27,12 +27,12 @@ const oncify = function (innerFn) {
     return edit;
 }
 
-//using "oncify" to acheive the addtion by 2 functionality
+//using "oncify" to achieve the addition by 2 functionality
 const onceAddBy2 = oncify(addBy2);
 console.log(onceAddBy2(10));//12
 console.log(onceAddBy2(10));//Sorry
 
-//using "oncify" to acheive the multiply by 2 functionality
+//using "oncify" to achieve the multiply by 2 functionality
 const onceMultiplyBy2 = oncify(multiplyBy2);
 console.log(onceMultiplyBy2(10));//20
 console.log(onceMultiplyBy2(10));//Sorry

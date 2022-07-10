@@ -1,6 +1,6 @@
 'use strict'
 
-//because of "hoisting" property, greet variable declration is hoisted up and since no value is there
+//because of "hoisting" property, greet variable declaration is hoisted up and since no value is there
 //at this moment so "undefined" will be printed
 //var greet;
 console.log(greet);

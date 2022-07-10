@@ -29,17 +29,17 @@ const oncify = function (innerFn) {
     return edit;
 }
 
-//using "oncify" to acheive the addtion by 2 functionality, within "oncify", we get "decorated function call"
+//using "oncify" to achieve the addition by 2 functionality, within "oncify", we get "decorated function call"
 //within "onceAddBy2" which is nothing but passed functionality
 const onceAddBy2 = oncify(addBy2);
 //first the function call creates a "local execution context"[of basically "edit" function as "edit" is 
 //returned from "oncify"] and has "local val and local actualFnCallResult" setup and "counter and innerFn" 
 //setup in "backpack" when it tried to execute "innerFn"[decorated function], it looks within local memory 
-//and not found then looks for it in "backpack" and then excute it.
+//and not found then looks for it in "backpack" and then execute it.
 console.log(onceAddBy2(10));//12
 console.log(onceAddBy2(10));//Sorry
 
-//using "oncify" to acheive the multiply by 2 functionality, within "oncify", we get "decorated function"
+//using "oncify" to achieve the multiply by 2 functionality, within "oncify", we get "decorated function"
 //within "onceMultiplyBy2" which is nothing but passed functionality
 const onceMultiplyBy2 = oncify(multiplyBy2);
 console.log(onceMultiplyBy2(10));//20
