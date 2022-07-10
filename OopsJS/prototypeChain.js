@@ -36,3 +36,6 @@ console.log(multipleBy2.hasOwnProperty("score"));//this method is accessible thr
         __proto__ : null
     }
 */
+/*  A note on the last line of this slide: __proto__ is now a private variable and not exposed by default on the 
+    object; you now should use Object.getPrototypeOf to grab an object's prototype.
+*/
